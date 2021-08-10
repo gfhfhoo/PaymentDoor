@@ -1,0 +1,24 @@
+main: me.endnether.PaymentDoor
+name: PaymentDoor
+version: 0.0.1
+api-version: 1.17
+permissions:
+  netherPD.*:
+    description: All permissions include create, destory, edit and so on.
+    children:
+      netherPD.create: true
+      netherPD.remove: true
+      netherPD.edit: true
+      netherPD.enter: true
+  netherPD.create:
+    description: Allow player to create a payment door
+    default: true
+  netherPD.remove:
+    description: Allow player to destory a payment door
+    default: true
+  netherPD.edit:
+    description: Allow player to edit a payment door
+    default: true
+  netherPD.enter:
+    description: Allow player to enter a payment door
+    default: true
